@@ -1,11 +1,11 @@
 import scrapy
 
 
-class JumiaSpinder(scrapy.Spider):
+class JumiaSpider(scrapy.Spider):
     """
     This is a simple crawler for the clothing page of jumia sporting goods page.
     It uses CSS selectors and xpath to extract the name of a product, the rating and the price
-    and image source
+    and image src
     """
     name = 'jumia_spider.'
     start_urls = ['https://www.jumia.cm/en/sporting-goods/']
