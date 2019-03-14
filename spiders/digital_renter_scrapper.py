@@ -27,7 +27,7 @@ class DigitalRenterSpider(scrapy.Spider):
             else:
                 print(type, location, link, views, price)
                 print("----------------------------------------")
-            yield {'link': link, 'type': type, 'location': location, 'price': price,'views':views}
+            	yield {'link': link, 'type': type, 'location': location, 'price': price,'views':views}
 
         # At the time of writing these, digitalrenter search spans till page 11
         # So let's parse the from page 2 to page 11 and scrap it.
